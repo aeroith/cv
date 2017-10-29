@@ -1,0 +1,141 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Serhat}{Çillidağ}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{Sami Bey Sk. No 11}{Maltepe / Istanbul}{Turkey}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+90~(535)~839~8255}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{scillidag@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.serhatcillidag.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{Github: github.com/aeroith}                 % optional, remove / comment the line if not wanted
+\photo[96pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2012--2017}{B.S}{Izmir Institute of Technology}{Izmir}{\textit{}}{Electronics and Communications Engineering}  % arguments 3 to 6 can be left empty
+\cventry{2013--2014}{B.S}{Management Center Innsbruck}{Innsbruck}{\textit{}}{Mechatronics - Studied as an Erasmus student}
+
+\section{Bachelor thesis}
+\cvitem{title}{\emph{Full 3D Model Reconstruction Using Multiple Kinects}}
+\cvitem{supervisors}{Assoc. Prof. Dr. Şevket Gümüştekin}
+\cvitem{description}{In this project, I have created real-time 3D mesh and video capturing software using 4 
+	Kinects.  I have worked with various C++ libraries including Boost, OpenGL, Point Cloud 
+	Library, LibSSH and OpenMP.
+}
+\section{Experience}
+\subsection{Vocational}
+\cventry{\ \ \ 2017 -- now}{Software Engineer}{Sony}{Istanbul}{}{Worked as a front-end developer.\newline{}%
+	Achievements:%
+	\begin{itemize}%
+		\item  TBA 
+		\item  TBA 
+		\item  TBA 
+\end{itemize}}
+\cventry{\ \ \ 2015 \newline(3 months)}{Intern}{Vodafone Turkey}{Izmir}{}{Worked with transmission team.\newline{}%
+Achievements:%
+\begin{itemize}%
+\item  Managing and doing maintenance of the installed Base Station 
+Controllers(BSC) 
+\item  Syncing projects over the cloud and updating with Google Earth to make 
+easier planning. 
+\item  A lot of small tasks with MS Excel and financial work by using a small tool 
+developed in the company. 
+\end{itemize}}
+\cventry{\ \ \ 2014 \newline(1 month)}{Intern}{Schneider Electric}{Izmir}{}{Worked with project design team.\newline{}%
+	Achievements:%
+	\begin{itemize}%
+		\item  Low Voltage panel designing with the Project design team.  
+		\item  Made a small tool to bring up appropriate reference designs based on 
+		customer needs.  
+\end{itemize}}
+\cventry{2013--2014}{Volunteer Engineer}{DVLX (Design Vision Labs)}{Izmir}{}{Worked here on my free time.\newline{}%
+Achievements:%
+\begin{itemize}%
+	\item  Designing and making small PCB projects	
+	\item  Learning about ARM programming 
+\end{itemize}}
+\section{Programming Languages}
+\cvitemwithcomment{Strong:}{C/C++, JavaScript(React.js, Node.js), Java, CSS/HTML, MATLAB}{}
+\cvitemwithcomment{Familiar:}{Scala, Python, Shell, SQL (MariaDB, MySQL), 
+	NoSQL(MongoDB)
+}{}
+\cvitem{Certifications:}{Functional Programming in Scala by Martin Odersky on Coursera}
+
+\section{Software and General Knowledge}
+\cvitem{--}{Version Control (Git, SVN)}
+\cvitem{--}{Automated Testing, Unit, Integration Testing}
+\cvitem{--}{Various IDE's, Intellij, Eclipse, Visual Studio, vim -- tmux}
+\cvitem{--}{Unix/Linux operating systems management (Debian -- CentOS based)}{}
+\cvitem{--}{Agile Project Management, Continuous Integration}
+
+\section{Projects}
+\cvitem {} {Available at github.com/aeroith}
+\cventry{2017}{BookStrap}{ A lightweight open source e-book web application 
+}{}{}{ In this project, I created a web application to parse, store and serve electronic books directly to the ebook reader. Primarily written in JavaScript (MongoDB, Express, React, Node). 
+\newline{}%
+	(Demo available at: https://bookstrap.ga)}
+\cventry{2017}{Epub-metadata-parser}{ A smart and modular ebook parser}{}{}{In this module, I created an ebook parser which can extract metadata and cover images (if available) from epub files. I mainly created it in order to use in BookStrap project but made it as a module so anyone can use it.}
+\cventry{2014}{ Designing a low-cost Arduino under \$2 
+}{}{}{}{ In this project, I made myself familiarized with PCB design and production including low level C implementation on the Arm chips. 
+}
+
+\section{Languages}
+\cvlistdoubleitem{Turkish -- Native}{English -- Advanced}
+\cvlistdoubleitem{German -- Intermediate}{Japanese -- Beginner}
+
+\section{Interests}
+\cvlistdoubleitem{Skiing, Swimming}{Learning New Languages}
+\cvlistdoubleitem{Hobby Electronics}{Travelling}
+
+\section{Personal Traits}
+\cvitem{}{Open-minded, team player, continuous self-improvement, flexible, energetic, 
+	analytical thinker.}
+
+\section{References}
+\cvitem{}{Available upon request}
+
+\end{document}
+
+%% end of file `template.tex'.
